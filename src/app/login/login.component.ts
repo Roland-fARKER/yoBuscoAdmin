@@ -12,9 +12,9 @@ export class LoginComponent {
   
   form1 = new FormControl('');
 
+  userName: string|undefined ;
+  password:string|undefined;
+
   constructor(private router: Router) { }
 
-  redirecionar(){
-    this.router.navigate(['/dasboard']);
-  }
 }

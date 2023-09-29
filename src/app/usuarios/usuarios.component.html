@@ -1,0 +1,8 @@
+<div class="bar">
+    <button *ngFor="let item of items" routerLink="{{item.link}}">
+        {{item.name}}
+        <i class="pi pi-{{item.icon}}"></i>
+    </button>
+</div>
+
+<router-outlet/>

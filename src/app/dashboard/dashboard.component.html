@@ -1,1 +1,13 @@
-<p>dashboard works!</p>
+<nav class="nav">
+    <div>
+        <img src="../../assets/img/logo1.png" class="logo">
+    </div>
+    <a 
+        *ngFor="let item of items" 
+        class="nav-link"
+        routerLink="{{item.link}}" >
+        <i class="pi pi-{{item.icon}}" ></i>
+    </a>
+</nav>
+
+<router-outlet></router-outlet>

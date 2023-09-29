@@ -2,15 +2,16 @@
   <div class="cont2">
     <h1>Inicia sesión</h1>
     <span class="p-float-label">
-      <input pInputText id="username" class="input1" />
-      <label htmlFor="username" class="label1">Nombre de usuario</label> </span
-    >
+      <input pInputText id="username" class="input1" (ngModel)="userName" />
+      <label htmlFor="username" class="label1">Nombre de usuario</label>
+    </span>
 
     <span class="p-float-label">
-      <input pInputText id="username" class="input1" />
-      <label htmlFor="username" class="label1">Password</label> </span
-    >
+      <label htmlFor="username" class="label1">Password</label>
+      <input pInputText id="username" class="input1" (ngModel)="password" type="password" />
+    </span>
+
     <a href="#">Ha olvidado su contraseña?</a>
-    <button class="btn1">Log In</button>
+    <button class="btn1" routerLink="/dashboard">Log In</button>
   </div>
 </div>
